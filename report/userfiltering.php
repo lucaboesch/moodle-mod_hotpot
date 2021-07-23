@@ -62,7 +62,7 @@ class hotpot_user_filtering extends user_filtering {
                 // In Moodle >= 2.7, we use the "modgrade" string.
                 // In Moodle <= 2.6, we use simply "grade".
                 $modgrade = get_string_manager()->string_exists('modgrade', 'grades');
-                $label = get_string($modgrade ? 'modgrade' : 'grade', 'grades');
+                $label = get_string('gradenoun');
                 return new hotpot_filter_grade($fieldname, $label, $advanced, $default);
             case 'timemodified':
                 $label = get_string('time', 'quiz');
